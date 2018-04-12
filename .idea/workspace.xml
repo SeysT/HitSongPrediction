@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17a5b3e5-1261-4fa2-ba87-774c660796a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/00__James_Bond_Theme.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/02__From_Russia_With_Love.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/03__Goldfinger.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/04__Thunderball.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/05__You_Only_Live_Twice.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/06__On_Her_Majesty's_Secret_Service.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/07__Diamonds_Are_Forever.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/08__Live_And_Let_Die.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/10__The_Spy_Who_Loved_Me.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/11__Moonraker.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/12__For_Your_Eyes_Only.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/13__Octopussy.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/14__Never_Say_Never_Again.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/15__A_Vew_To_Kill.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/16__The_Living_Daylights.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/17__Licence_To_Kill.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/18__Goldeneye.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/19__Tomorrow_Never_Dies.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/20__The_World_Is_Not_Enough.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/21__Die_Another_Day.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/22__Casino_Royale.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/23__Quantum_Of_Solace__short.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/24__Skyfall.mid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Data/James Bond Midi/25__Spectre.mid" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/database_getter.py" afterPath="$PROJECT_DIR$/database_getter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="hdf5_getters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hdf5_getters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="19" />
+            <state relative-caret-position="408">
+              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -49,8 +27,8 @@
       <file leaf-file-name="database_getter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database_getter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="510">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -72,6 +50,8 @@
       <find>tables</find>
       <find>title</find>
       <find>artist</find>
+      <find>h5py</find>
+      <find>duration</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,8 +96,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,20 +162,20 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38269988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38269988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -209,16 +189,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hdf5_getters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="103" column="19" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="19" />
+        <state relative-caret-position="408">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_getter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdf5_getters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
