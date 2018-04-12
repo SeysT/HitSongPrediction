@@ -1,47 +1,80 @@
-import hdf5_getters as h5
-import os
 import pandas as pd
+import hdf5_getters as h5
 
-path = '../Data/lmd_matched_h5/'
+import os
 
-df = pd.DataFrame()
+from csv import writer
+from json import load
 
-for parent_folder in os.listdir(path):
-    for sub_folder in os.listdir(path + '/' + parent_folder):
-        for child_folder in os.listdir(path + '/' + parent_folder + '/' + sub_folder):
-            for file in os.listdir(path + '/' + parent_folder + '/' + sub_folder + '/' + child_folder):
-                ds = h5.open_h5_file_read(path + '/' + parent_folder + '/' + sub_folder + '/' + child_folder + '/' + file)
-
-                dictionary = dict()
-                dictionary['artist_terms'] = [h5.get_artist_terms(ds)]
-                dictionary['artist_terms_freq'] = [h5.get_artist_terms_freq(ds)]
-                dictionary['artist_terms_weight'] = [h5.get_artist_terms_weight(ds)]
-                dictionary['danceability'] = [h5.get_danceability(ds)]
-                dictionary['energy'] = [h5.get_energy(ds)]
-                dictionary['key'] = [h5.get_key(ds)]
-                dictionary['mode'] = [h5.get_mode(ds)]
-                dictionary['loudness'] = [h5.get_loudness(ds)]
-                dictionary['hash'] = [h5.get_audio_md5(ds)]
-                dictionary['path'] = [parent_folder + '/' + sub_folder + '/' + child_folder + '/']
-                dictionary['file'] = [file]
-
-                dictionary['duration'] = [h5.get_duration(ds)]
-                dictionary['artist_familiarity'] = [h5.get_artist_familiarity(ds)]
-                dictionary['similar_artists'] = [h5.get_similar_artists(ds)]
-                dictionary['artist_id'] = [h5.get_artist_id(ds)]
-                dictionary['title'] = [h5.get_title(ds)]
-                dictionary['hotttnesss'] = [h5.get_song_hotttnesss(ds)]
-                dictionary['year'] = [h5.get_year(ds)]
-                dictionary['latitude'] = [h5.get_artist_latitude(ds)]
-                dictionary['longitude'] = [h5.get_artist_longitude(ds)]
-
-                print(dictionary)
-                df = df.append(pd.DataFrame(dictionary), ignore_index=True)
-                ds.close()
-
-print(df)
-print(df.shape)
-df.to_csv('test.csv', sep='\t')
+from utils import get_midi_name_from_matched
 
 
+path = './Data/lmd_matched_h5/'
+with open('./Data/match_scores.json', 'r') as json_file:
+    matched_scores = load(json_file)
 
+with open('./test.csv', 'w', newline='\n') as csv_file:
+    csv_writer = writer(csv_file, delimiter=',', quotechar='|')
+
+    csv_writer.writerow([
+        'artist_terms',
+        'artist_terms_freq',
+        'artist_terms',
+        'artist_terms_freq',
+        'artist_terms_weight',
+        'danceability',
+        'energy',
+        'key',
+        'mode',
+        'loudness',
+        'path',
+        'file',
+        'duration',
+        'artist_familiarity',
+        'similar_artists',
+        'artist_id',
+        'title',
+        'hotttnesss',
+        'year',
+        'latitude',
+        'longitude',
+        'midi_name'
+    ])
+
+    i = 0
+
+    for parent_folder in os.listdir(path):
+        for sub_folder in os.listdir(path + '/' + parent_folder):
+            for child_folder in os.listdir(path + '/' + parent_folder + '/' + sub_folder):
+                for file in os.listdir(path + '/' + parent_folder + '/' + sub_folder + '/' + child_folder):
+                    with h5.open_h5_file_read(path + '/' + parent_folder + '/' + sub_folder + '/' + child_folder + '/' + file) as ds:
+
+                        row = []
+                        row += [h5.get_artist_terms(ds)]
+                        row += [h5.get_artist_terms_freq(ds)]
+                        row += [h5.get_artist_terms_weight(ds)]
+                        row += [h5.get_danceability(ds)]
+                        row += [h5.get_energy(ds)]
+                        row += [h5.get_key(ds)]
+                        row += [h5.get_mode(ds)]
+                        row += [h5.get_loudness(ds)]
+                        row += [parent_folder + '/' + sub_folder + '/' + child_folder + '/']
+                        row += [file]
+
+                        row += [h5.get_duration(ds)]
+                        row += [h5.get_artist_familiarity(ds)]
+                        row += [h5.get_similar_artists(ds)]
+                        row += [h5.get_artist_id(ds)]
+                        row += [h5.get_title(ds)]
+                        row += [h5.get_song_hotttnesss(ds)]
+                        row += [h5.get_year(ds)]
+                        row += [h5.get_artist_latitude(ds)]
+                        row += [h5.get_artist_longitude(ds)]
+                        row += [get_midi_name_from_matched(file[:-3], matched_scores)]
+
+                        ds.close()
+
+                        csv_writer.writerow(row)
+
+                        print(f'Row {i} written!')
+                        i += 1
