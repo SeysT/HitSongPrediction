@@ -6,7 +6,7 @@ from csv import reader, writer
 from json import load
 
 from utils import get_midi_name_from_matched
-from rnn_approach.midi_to_matrix import midi_to_matrix
+from rnn_approach_utils.midi_to_matrix import midi_to_matrix
 
 
 def generate_data(data_dirpath):
