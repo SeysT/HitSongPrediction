@@ -84,8 +84,6 @@ def data_generator(dirpath):
             data = np.load(os.path.join(dirpath, file))
             X = np.array([x for x in data[0]])
             Y = data[1].astype(float)
-            Y[Y > 0.8] = 1
-            Y[Y <= 0.8] = 0
 
             yield X, Y
 
