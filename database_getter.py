@@ -13,12 +13,10 @@ path = './Data/lmd_matched_h5/'
 with open('./Data/match_scores.json', 'r') as json_file:
     matched_scores = load(json_file)
 
-with open('./test.csv', 'w', newline='\n') as csv_file:
-    csv_writer = writer(csv_file, delimiter=',', quotechar='|')
+with open('./dataset.csv', 'w', newline='\n') as csv_file:
+    csv_writer = writer(csv_file, delimiter='\t', quotechar='"')
 
     csv_writer.writerow([
-        'artist_terms',
-        'artist_terms_freq',
         'artist_terms',
         'artist_terms_freq',
         'artist_terms_weight',
@@ -30,6 +28,7 @@ with open('./test.csv', 'w', newline='\n') as csv_file:
         'path',
         'file',
         'duration',
+        'tempo',
         'artist_familiarity',
         'similar_artists',
         'artist_id',
@@ -62,6 +61,7 @@ with open('./test.csv', 'w', newline='\n') as csv_file:
                         row += [file]
 
                         row += [h5.get_duration(ds)]
+                        row += [h5.get_tempo(ds)]
                         row += [h5.get_artist_familiarity(ds)]
                         row += [h5.get_similar_artists(ds)]
                         row += [h5.get_artist_id(ds)]
