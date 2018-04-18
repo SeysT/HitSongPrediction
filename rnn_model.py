@@ -6,8 +6,7 @@ from keras.layers import Dense
 from keras.layers import LSTM, GRU, RNN
 from keras.layers import Dropout
 
-from rnn_approach_utils.generate_data import data_generator
-from rnn_approach_utils.midi_to_matrix import MAX_LENGTH
+from utils import data_generator, MAX_LENGTH
 
 
 def create_model(
