@@ -1,12 +1,12 @@
+import os
+
 import hdf5_getters as h5
 import numpy as np
-import os
 
 from csv import reader, writer
 from json import load
 
-from utils import get_midi_name_from_matched
-from rnn_approach_utils.midi_to_matrix import midi_to_matrix
+from utils import get_midi_name_from_matched, midi_to_matrix
 
 
 def generate_data(data_dirpath):
@@ -76,16 +76,6 @@ def save_data_into_arrays(folder, data):
             Y = []
         
         i += 1
-
-
-def data_generator(dirpath):
-    while True:
-        for file in os.listdir(dirpath):
-            data = np.load(os.path.join(dirpath, file))
-            X = np.array([x for x in data[0]])
-            Y = data[1].astype(float)
-
-            yield X, Y
 
 
 if __name__ == '__main__':
