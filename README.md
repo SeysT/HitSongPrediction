@@ -10,7 +10,8 @@ Pour installer le projet nous conseillons l'utilisation d'un environnement virtu
 
 ```sh
 virtualenv env --python=/usr/bin/python3.6
-source ./env/bin/activate 
+source ./env/bin/activate
+pip install -r requirements.txt
 ```
 
 Pour télécharger et générer les données au bon format, nous avons écrit le script `setup.sh`. Pour le lancer :
